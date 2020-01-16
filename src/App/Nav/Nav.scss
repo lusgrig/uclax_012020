@@ -1,5 +1,5 @@
 nav { 
-    background: rgb(253, 253, 101); 
+    background-color: rgb(253, 253, 101); 
     padding: 20px; 
 
     .hamburger{
@@ -27,5 +27,25 @@ nav {
             }
 
         }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav { 
+        background-color: rgb(103, 252, 202); 
+        .links{
+            a{
+                display: block;
+            }
+        }
+        
+    }
+}
+@media only screen and (max-width: 800px) {
+    
+    nav { 
+        background: rgb(103, 252, 202); 
+        
     }
 }
