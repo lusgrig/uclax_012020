@@ -1,0 +1,31 @@
+nav { 
+    background: rgb(253, 253, 101); 
+    padding: 20px; 
+
+    .hamburger{
+        background-color: orange;
+
+    }
+    .links{
+        background-color: yellow;
+        text-align: center;
+
+        a{
+            background-color: purple;
+            color: white;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 10px;
+
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 1s;
+
+            &:hover{
+                background-color: maroon;
+            }
+
+        }
+    }
+}
