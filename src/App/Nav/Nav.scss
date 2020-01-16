@@ -4,6 +4,7 @@ nav {
 
     .hamburger{
         background-color: orange;
+        display: block;
 
     }
     .links{
@@ -13,7 +14,7 @@ nav {
         a{
             background-color: purple;
             color: white;
-            display: inline-block;
+            display: block;
             padding: 20px;
             border-radius: 5px;
             margin: 10px;
@@ -31,21 +32,29 @@ nav {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
     nav { 
         background-color: rgb(103, 252, 202); 
         .links{
             a{
-                display: block;
+                display: inline-block;
             }
+        .hamburger{
+            display: none; 
+            }   
         }
         
     }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 800px) {
     
     nav { 
         background: rgb(103, 252, 202); 
+
+
+        .hamburger{
+            display: none; 
+        } 
         
     }
 }
