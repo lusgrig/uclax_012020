@@ -4,7 +4,7 @@ nav {
 
     .hamburger{
         background-color: orange;
-        display: block;
+        display: none;
 
     }
     .links{
@@ -31,22 +31,7 @@ nav {
     }
 }
 
-
-@media only screen and (min-width: 600px) {
-    nav { 
-        background-color: rgb(103, 252, 202); 
-        .links{
-            a{
-                display: inline-block;
-            }
-        .hamburger{
-            display: none; 
-            }   
-        }
-        
-    }
-}
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
     
     nav { 
         background: rgb(103, 252, 202); 
@@ -55,6 +40,21 @@ nav {
         .hamburger{
             display: none; 
         } 
+        
+    }
+}
+@media only screen and (max-width: 600px) {
+    nav { 
+        background-color: rgb(103, 252, 202); 
+        .hamburger{
+            display: block; 
+            }   
+        }
+        .links{
+            a{
+                display: inline-block;
+            }
+        
         
     }
 }
