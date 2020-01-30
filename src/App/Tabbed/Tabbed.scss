@@ -3,11 +3,18 @@
         display: flex;
         cursor: pointer;
         .tab{
-            background-color: teal;
+            background-color: #eeedab;
             padding: 10px 20px;
             border-radius: 5px 5px 0px 0px;
             margin-left: 10px;
+
+            &.active{
+                background-color: teal;
+                color: #eeedab;
+    
+            }
         }
+        
     }
     .content{
         background-color: teal;

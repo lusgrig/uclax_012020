@@ -1,0 +1,54 @@
+.Pages {
+    outline: 1px solid red;
+    padding: 20px;
+    margin: 50px auto;
+
+    background: rgb(231, 231, 110); 
+    padding: 20px; 
+
+    .columns{
+        background-color: rgb(1, 56, 56);
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+
+        .col{
+            padding: 10px;
+            color: white;
+            width:100%;
+        }
+        .col1{
+            background-color: teal;
+        }
+        .col2{
+            background-color: rgb(3, 148, 148);
+        }
+        .col3{
+            background-color: rgb(6, 158, 158);
+        }
+        .col4{
+            background-color: rgb(7, 207, 207);
+        }
+    }
+}
+@media only screen and (min-width: 600px) {
+    .Main   {
+        .columns{
+            .col{
+                width: 45%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .Main   {
+        .columns{
+            .col{
+                width: 22%;
+            }
+        }
+    }
+}

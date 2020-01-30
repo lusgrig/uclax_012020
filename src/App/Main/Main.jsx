@@ -1,6 +1,10 @@
 import React from 'react';
 import './Main.scss';
-import Tabbed from '../Tabbed/Tabbed.jsx';
+import {Switch, Route} from 'react-router-dom';
+import Welcome from '../Pages/Welcome.jsx';
+import Contact from '../Pages/Contact.jsx';
+import Services from '../Pages/Services.jsx';
+
 
 
 const Main = () => {
@@ -8,15 +12,19 @@ const Main = () => {
 
         <main className='Main'>
 
-        <Tabbed />
+        <Switch>
+            
+            <Route path='/Services'>
+                <Services />
+            </Route>
+            <Route path='/Contact'>
+                <Contact />
+            </Route>
+            <Route path='/'>
+                <Welcome />
+            </Route>
 
-            <div className="columns">
-                <div className="col col1">Col 1</div>
-                <div className="col col2">Col 2</div>
-                <div className="col col3">Col 3</div>
-                <div className="col col4">Col 4</div>
-
-            </div>
+        </Switch>
         
         </main>
     )

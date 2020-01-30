@@ -26,44 +26,20 @@ nav{
             width: 18%;
 
             &:hover{
-                background-color: #3d3d3d;
+                background-color: teal;
                 color:rgb(238, 237, 171);
+            }
+            &.active{
+                background-color: teal;
+                color:rgb(238, 237, 171);
+
             }
 
         }
     }
 }
 
-
-@media only screen and (max-width: 800px) {
-    
-    nav { 
-        align-content: center;
-       
-        .links{
-            text-align: center;
-            display: inline-block;
-            
-            width: 30%;
-            margin-left: auto;
-            margin-right: auto;
-            
-            
-            a{
-                width: 100%; 
-                
-            }
-      
-        
-        } 
-        // .hamburger{
-        //     display: none;
-        // }  
-    }
-}
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
     nav { 
         .hamburger{
             background-color: rgb(238, 237, 171);
@@ -79,15 +55,23 @@ nav{
             text-transform: uppercase;
             width: 5%;
             &:hover{
-                background-color: #3d3d3d;
+                background-color: teal;
+                
                 color:rgb(238, 237, 171);
                 cursor: pointer;
             }
             .fa-bars {
                 font-size: 1.5em;
             }
+            
         
             }  
+            .links{
+                a{
+                    display: block;
+                    width: 25%;
+                }
+            }
         }
         
 }
